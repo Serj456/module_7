@@ -11,7 +11,9 @@ class Shop:
     __filename = "products2.txt"
     def get_products(self):
         with open('products2.txt','r+', encoding='utf-8') as file:
-            file.read()
+            rs = file.read()
+            return rs
+            file.close()
 
 
     def add(self, *products):

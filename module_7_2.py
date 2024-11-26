@@ -11,7 +11,7 @@ def custom_write(file_name, strings):
             str_count += 1
         string_position.update({(str_count, tell): i})
     return string_position
-    print(string_position)
+    file.close()
 
 
 
